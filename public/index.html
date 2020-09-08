@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <title>E-voting app</title>
+</head>
+<body>
+  <div class="container">
+    <h1>OS Vote</h1>
+    <p>Vote for your favourite OS to develop on</p>
+    <form id="vote-form">
+      <p>
+        <input type="radio" name="os" id="windows" value="Windows">
+        <label for="windows">Windows</label>
+      </p>
+
+      <p>
+        <input type="radio" name="os" id="macos" value="MacOs">
+        <label for="macos">MacOs</label>
+      </p>
+
+      <p>
+        <input type="radio" name="os" id="linux" value="Linux">
+        <label for="linux">Linux</label>
+      </p>
+
+      <p>
+        <input type="radio" name="os" id="other" value="Other">
+        <label for="other">Something Else</label>
+      </p>
+      <input type="submit" value="Vote" class="btn">
+    </form>
+
+    <br> <br>
+
+    <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+  </div>
+ 
+  <script
+  src="https://code.jquery.com/jquery-2.2.4.js"
+  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pusher/3.0.0/pusher.min.js" integrity="sha512-ISRXrUsugjg2IRyCvkZZQUVwgPxZDcETUEl8oaSUoyR32sbuyG07tdb9X5jXsUQI78q7jAOA37wZDY422cYpZw==" crossorigin="anonymous"></script>
+  <script src="https://js.pusher.com/7.0/pusher.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js" integrity="sha512-FJ2OYvUIXUqCcPf1stu+oTBlhn54W0UisZB/TNrZaVMHHhYvLBV9jMbvJYtvDe5x/WVaoXZ6KB+Uqe5hT2vlyA==" crossorigin="anonymous"></script>
+
+  <script src="main.js"></script>
+</body>
+</html>
