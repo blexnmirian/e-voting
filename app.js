@@ -12,10 +12,10 @@ const poll = require('./router/poll')
 app.use(express.static(path.join(__dirname, 'public')));
 
 //body parser middleware
-dotenv.config({path: './config.env'})
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
+dotenv.config({path: './config.env'})
 //connecting to mongodb
 mongoose.connect(process.env.DATABASE_REMOTE, {
   useNewUrlParser: true,
