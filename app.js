@@ -29,7 +29,7 @@ mongoose.connect(process.env.DATABASE_REMOTE, {
 app.use(cors());
 app.use('/poll', poll)
 
-const port = 3000;
-app.listen(port, ()=>{
-  console.log(`Server started at port ${port}`)
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, ()=>{
+  console.log(`Server started at port ${PORT}`)
 })
