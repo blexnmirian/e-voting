@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 dotenv.config({path: './config.env'})
 //connecting to mongodb
-mongoose.connect(process.env.DATABASE_REMOTE, {
+mongoose.connect(process.env.DATABASE_LOCAL, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true
