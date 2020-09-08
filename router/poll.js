@@ -9,7 +9,6 @@ var pusher = new Pusher({
   key: '661e8e1a18279265ceab',
   secret: '809f82e347fd915032ab',
   cluster: 'mt1',
-  encrypted: true
 });
 
 router.get('/', (req, res) => {
