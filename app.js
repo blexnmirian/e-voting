@@ -22,7 +22,7 @@ mongoose.connect(process.env.DATABASE_REMOTE, {
   useUnifiedTopology: true,
   useCreateIndex: true
 }, ()=>{
-  console.log(`Db connected to ${process.env.DATABASE_LOCAL}`)
+  console.log(`Db connected`)
 })
 
 //enable cors
